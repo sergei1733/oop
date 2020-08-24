@@ -11,16 +11,18 @@ public class Main {
         numbers(a, b);
     }
     private static void numbers(int a, int b){
-        if (a<b) {
+        if (a<=b) {
             System.out.print(a + " ");
             if (a != b)
                 numbers(a + 1, b);
+            if (a==b) return;
         }
 
        if (b<a) {
             System.out.print(b + " ");
             if (b != a)
                 numbers(a, b + 1);
+            if (a==b) return;
         }
     }
 }
