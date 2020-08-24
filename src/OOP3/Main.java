@@ -12,6 +12,6 @@ public class Main {
         Matrix p2 = new Matrix(3,3);
         p2.zapolnenieMass();
 
-        p1.matrixAddition(p2);
+
     }
 }
