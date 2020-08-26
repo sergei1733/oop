@@ -2,8 +2,8 @@ package oop7.professions;
 
 import oop7.vehicles.Car;
 
-public class Driver {
-    public String fio;
+public class Driver extends Person {
+
     public int experiece;
 
     public Driver(String fio, int experiece) {
@@ -13,9 +13,6 @@ public class Driver {
 
     @Override
     public String toString() {
-        return "Driver{" +
-                "fio='" + fio + '\'' +
-                ", experiece=" + experiece +
-                '}';
+        return this.fio;
     }
 }
