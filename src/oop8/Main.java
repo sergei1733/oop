@@ -12,7 +12,7 @@ Horse, характеризующие только этих животных. С
 
 public class Main {
     public static void main(String[] args) {
-
+        Animal animalMass[] = new Animal[2];
         Dog dog1 = new Dog("мясо","лес","Гера");
         Cat cat1 = new Cat("мыши", "дом", "Моника");
         Veterinarian veterinarian = new Veterinarian("Михаил");
@@ -21,5 +21,11 @@ public class Main {
         dog1.sleep(dog1);
         veterinarian.treatAnimal(dog1);
         cat1.makeNoise(cat1);
+        animalMass[0]=dog1;
+        animalMass[1]=cat1;
+        System.out.println("//////////////////////////");
+        for (int i = 0; i < animalMass.length; i++) {
+            veterinarian.treatAnimal(animalMass[i]);
+        }
     }
 }
