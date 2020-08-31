@@ -1,5 +1,7 @@
 package oop9;
 import java.awt.*;
+import java.util.Objects;
+
 public class Rectangle extends Shape{
     private Integer x,y,a,b;
 
@@ -19,4 +21,16 @@ public class Rectangle extends Shape{
     public String toString() {
         return "это прямоугольник";
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Rectangle rectangle = (Rectangle) o;
+        return x.equals(rectangle.x) &&
+                y.equals(rectangle.y) &&
+                a.equals(rectangle.a) &&
+                b.equals(rectangle.b);
+    }
+
 }

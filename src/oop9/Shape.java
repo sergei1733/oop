@@ -7,4 +7,9 @@ public abstract class Shape {
     }
 
     public abstract void draw(Color colour);
+
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
 }
